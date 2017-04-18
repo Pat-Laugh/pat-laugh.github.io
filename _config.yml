@@ -1,1 +1,3 @@
 name: Personal website of Patrick Laughrea
+gems:
+  - jekyll-redirect-from
