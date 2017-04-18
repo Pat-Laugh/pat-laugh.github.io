@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Patrick Laughrea">
+	<meta name="description" content="Personnal webpage of Patrick Laughrea">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<script src="/static/js/infoBox.js"></script>
+	<title>{{ page.title }}</title>
+</head>
+<body>
+	<a class="anchor" id="top"></a>
+	<div id="topMenu">
+		<p id="printMenu">Patrick Laughrea - About me</p>
+		<div id="back">
+			<ul id="topMenuList">
+				<li><a href="/">About me</a></li>
+				<li><a href="/programming">Programming</a></li>
+				<li><a href="/music">Music</a></li>
+				<li><a href="/blog">Blog</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div class="infoBox" id="constructionBox">
+			<p>Website under construction</p>
+			<div class="infoBoxClose" onclick="closeBox('constructionBox')">&times;</div>
+		</div>
+		<div class="infoBox" id="languageBox">
+			<a href="fr/{{ page.id }}">Voir cette page en français</a>
+			<div class="infoBoxClose" onclick="closeBox('languageBox')">&times;</div>
+		</div>
+		
+		{{ content }}
+		
+		<div id="topButton"><a href="#top">&uarr;</a></div>
+		<footer>
+			<a id="linkLanguage" href="fr/{{ page.id }}">En français</a>
+			<br>
+			Last modification: 2017-01-06
+			<br>
+			&copy; 2017 Patrick Laughrea
+		</footer>
+	</div>
+</body>
+</html>
