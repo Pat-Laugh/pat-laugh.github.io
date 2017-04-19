@@ -103,18 +103,18 @@ a.anchor
 {
 	display: none;
 	position: relative;
-	max-width: 14rem;
+	max-width: 15.5rem;
 	margin: auto;
 	border: 1px solid #BBFBBB;
 	margin-bottom: 1em;
 	text-align: center;
 	background-color: #EEFEEE;
-	padding-right: 1.5em;
 }
 
-.info-box p
+.info-box > *
 {
 	padding: 0.5em;
+	padding-right: 2em;
 }
 
 .info-box a
@@ -122,7 +122,6 @@ a.anchor
 	display: block;
 	text-decoration: none;
 	color: inherit;
-	padding: 0.5em;
 }
 
 .info-box a:hover
@@ -137,7 +136,7 @@ a.anchor
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: transparent;
+	background-color: #EEFEEE;
 	color: #00AA00;
 	border: 1px solid #A0EAA0;
 	padding: 0 0.2em 0.1em 0.2em;
@@ -226,7 +225,7 @@ a.anchor
 	}
 }
 
-@media screen and (min-width: 36rem) and (max-width: 38.999rem)
+@media screen and (min-width: 36rem) and (max-width: 37.699rem)
 {
 	.info-box
 	{
