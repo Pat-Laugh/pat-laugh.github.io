@@ -17,10 +17,10 @@
 		<div id="back">
 			<ul id="top-menu-list">
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
-				<li><a href="/{{ layout.lang_main }}/programming">{{ layout.top_menu[1] }}</a></li>
-				<li><a href="/{{ layout.lang_main }}/music">{{ layout.top_menu[2] }}</a></li>
-				<li><a href="/{{ layout.lang_main }}/blog">{{ layout.top_menu[3] }}</a></li>
-				<li><a href="/{{ layout.lang_main }}/contact">{{ layout.top_menu[4] }}</a></li>
+				{% assign top_menu_size_index_0 = layout.top_menu.size | minus: 1 %}
+				{% for i in (1..top_menu_size_index_0) %}
+				<li><a href="/{{ layout.lang_main }}/{{ layout.top_menu[i] | downcase | replace: " ", "-" }}">{{ layout.top_menu[i] }}</a></li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
