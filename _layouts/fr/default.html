@@ -1,78 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Patrick Laughrea">
-	<meta name="description" content="Site web personnel de Patrick Laughrea">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-	<script src="/static/js/infoBox.js"></script>
-	<title>{{ page.title }}</title>
-</head>
-<body>
-	<a class="anchor" id="top"></a>
-	<div id="topMenu">
-		<p id="printMenu">Patrick Laughrea - {{ page.title }}</p>
-		<div id="back">
-			<ul id="topMenuList">
-				<li><a href="/fr/">Profil</a></li>
-				<li><a href="/fr/programming">Programmation</a></li>
-				<li><a href="/fr/music">Musique</a></li>
-				<li><a href="/fr/blog">Blog</a></li>
-				<li><a href="/fr/contact">Contact</a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="content">
-		<div class="infoBox" id="constructionBox">
-			<p>Site web en construction</p>
-			<div class="infoBoxClose" onclick="closeBox('constructionBox')">&times;</div>
-		</div>
-		<div class="infoBox" id="languageBox">
-			<a href="/en/{{ page.link }}">See this page in English</a>
-			<div class="infoBoxClose" onclick="closeBox('languageBox')">&times;</div>
-		</div>
-		
-		{% if page.quick_list %}
-		<div id="main">
-			<div id="quickListBlock">
-				<ul id="quickList">
-					{% for item in page.quick_list %}
-					<li><a href="#{{ item["anchor"] }}">{{ item["title"] }}</a></li>
-					{% endfor %}
-				</ul>
-			</div>
-			<ul id="contentList">
-				{% assign content_list_size_index_0 = page.content_list.size | minus: 1 %}
-				{% for i in (0..content_list_size_index_0) %}
-				<li>
-					<a class="anchor" id="{{ page.quick_list[i]["anchor"] }}"></a>
-					<p class="contentTitle">{{ page.quick_list[i]["title"] }}</p>
-					<p class="contentText">
-						{{ page.content_list[i] }}
-					</p>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-		{% else %}
-		{% if content.size > 0 %}
-		<div id="main">
-			<ul id="contentList">
-				{{ content }}
-			</ul>
-		</div>
-		{% endif %}
-		{% endif %}
-		
-		<div id="topButton"><a href="#top">&uarr;</a></div>
-		<footer>
-			<a id="linkLanguage" href="/en/{{ page.link }}">In English</a>
-			<br>
-			Dernière modification : {{ page.last-modif }}
-			<br>
-			&copy; 2017 Patrick Laughrea
-		</footer>
-	</div>
-</body>
-</html>
+---
+layout: default
+meta_description: Site web personnel de
+info_box_construction: Site web en construction
+info_box_lang: See this page in English
+lang_main: fr
+lang_other: en
+last_modif_msg: "Dernière modification :"
+top_menu:
+ -  Profil
+ -  Programmation
+ -  Musique
+ -  Blog
+ -  Contact
+---
