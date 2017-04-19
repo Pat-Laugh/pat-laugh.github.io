@@ -1,8 +1,8 @@
 //Copyright 2017 Patrick Laughrea
 var LOCAL_STORAGE = storageAvailable("localStorage");
 var DAY_MILLIS = 3600 * 24 * 1000;
-var ID_CONSTRUCTION_BOX = "constructionBox";
-var ID_LANGUAGE_BOX = "languageBox";
+var ID_CONSTRUCTION_BOX = "construction-box";
+var ID_LANGUAGE_BOX = "language-box";
 
 window.onload = function()
 {

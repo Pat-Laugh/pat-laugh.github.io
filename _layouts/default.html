@@ -7,15 +7,15 @@
 	<meta name="author" content="{{ author }}">
 	<meta name="description" content="{{ layout.meta_description }} {{ author }}">
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-	<script src="/static/js/infoBox.js"></script>
+	<script src="/static/js/info-box.js"></script>
 	<title>{{ page.title }}</title>
 </head>
 <body>
 	<a class="anchor" id="top"></a>
-	<div id="topMenu">
-		<p id="printMenu">{{ author }} - {{ page.title }}</p>
+	<div id="top-menu">
+		<p id="print-menu">{{ author }} - {{ page.title }}</p>
 		<div id="back">
-			<ul id="topMenuList">
+			<ul id="top-menu-list">
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
 				<li><a href="/{{ layout.lang_main }}/programming">{{ layout.top_menu[1] }}</a></li>
 				<li><a href="/{{ layout.lang_main }}/music">{{ layout.top_menu[2] }}</a></li>
@@ -25,31 +25,33 @@
 		</div>
 	</div>
 	<div id="content">
-		<div class="infoBox" id="constructionBox">
+		{% assign id_construction_box = 'construction-box' %}
+		<div class="info-box" id="{{ id_construction_box }}">
 			<p>{{ layout.info_box_construction }}</p>
-			<div class="infoBoxClose" onclick="closeBox('constructionBox')">&times;</div>
+			<div class="info-box-close" onclick="closeBox('{{ id_construction_box }}')">&times;</div>
 		</div>
-		<div class="infoBox" id="languageBox">
+		{% assign id_language_box = 'language-box' %}
+		<div class="info-box" id="{{ id_language_box }}">
 			<a href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
-			<div class="infoBoxClose" onclick="closeBox('languageBox')">&times;</div>
+			<div class="info-box-close" onclick="closeBox('{{ id_language_box }}')">&times;</div>
 		</div>
 		
 		{% if page.quick_list %}
 		<div id="main">
-			<div id="quickListBlock">
-				<ul id="quickList">
+			<div id="quick-list-block">
+				<ul id="quick-list">
 					{% for item in page.quick_list %}
 					<li><a href="#{{ item["anchor"] }}">{{ item["title"] }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
-			<ul id="contentList">
+			<ul id="content-list">
 				{% assign content_list_size_index_0 = page.content_list.size | minus: 1 %}
 				{% for i in (0..content_list_size_index_0) %}
 				<li>
 					<a class="anchor" id="{{ page.quick_list[i]["anchor"] }}"></a>
-					<p class="contentTitle">{{ page.quick_list[i]["title"] }}</p>
-					<p class="contentText">
+					<p class="content-title">{{ page.quick_list[i]["title"] }}</p>
+					<p class="content-text">
 						{{ page.content_list[i] }}
 					</p>
 				</li>
@@ -59,18 +61,18 @@
 		{% else %}
 		{% if content.size > 0 %}
 		<div id="main">
-			<ul id="contentList">
+			<ul id="content-list">
 				{{ content }}
 			</ul>
 		</div>
 		{% endif %}
 		{% endif %}
 		
-		<div id="topButton"><a href="#top">&uarr;</a></div>
+		<div id="top-button"><a href="#top">&uarr;</a></div>
 		<footer>
-			<a id="linkLanguage" href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
+			<a id="link-language" href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
 			<br>
-			{{ layout.last_modif_msg }} {{ page.last-modif }}
+			{{ layout.last_modif_msg }} {{ page.last_modif }}
 			<br>
 			&copy; 2017 {{ author }}
 		</footer>
