@@ -36,8 +36,9 @@
 			<div class="info-box-close" onclick="closeBox('{{ id_language_box }}')">&times;</div>
 		</div>
 		
-		{% if page.quick_list %}
+		{% if page.content_list %}
 		<div id="main">
+			{% if page.has_error == nil %}
 			<div id="quick-list-block">
 				<ul id="quick-list">
 					{% for item in page.quick_list %}
@@ -45,12 +46,17 @@
 					{% endfor %}
 				</ul>
 			</div>
+			{% endif %}
 			<ul id="content-list">
 				{% assign content_list_size_index_0 = page.content_list.size | minus: 1 %}
 				{% for i in (0..content_list_size_index_0) %}
 				<li>
+					{% if page.has_error == nil %}
 					<a class="anchor" id="{{ page.quick_list[i] | downcase | replace: " ", "-" }}"></a>
 					<p class="content-title">{{ page.quick_list[i] }}</p>
+					{% else %}
+					<p class="content-title error-color">{{ page.quick_list[i] }}</p>
+					{% endif %}
 					<p class="content-text">
 						{{ page.content_list[i] }}
 					</p>
@@ -59,13 +65,7 @@
 			</ul>
 		</div>
 		{% else %}
-		{% if content.size > 0 %}
-		<div id="main">
-			<ul id="content-list">
-				{{ content }}
-			</ul>
-		</div>
-		{% endif %}
+		{{ content }}
 		{% endif %}
 		
 		<div id="top-button"><a href="#top">&uarr;</a></div>
