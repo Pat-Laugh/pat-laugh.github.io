@@ -33,7 +33,20 @@
 			<div class="infoBoxClose" onclick="closeBox('languageBox')">&times;</div>
 		</div>
 		
-		<div id="main">{{ content }}</div>
+		<div id="main">
+			{% if page.quick_list and page.quick_list.size > 0 %}
+			<div id="quickListBlock">
+				<ul id="quickList">
+					{% for item in page.quick_list %}
+					<li><a href="#{{ item["anchor"] }}">{{ item["title"] }}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+			<ul id="contentList">
+				{{ content }}
+			</ul>
+		</div>
 		
 		<div id="topButton"><a href="#top">&uarr;</a></div>
 		<footer>
