@@ -41,7 +41,7 @@
 			<div id="quick-list-block">
 				<ul id="quick-list">
 					{% for item in page.quick_list %}
-					<li><a href="#{{ item["anchor"] }}">{{ item["title"] }}</a></li>
+					<li><a href="#{{ item | downcase | replace: " ", "-" }}">{{ item }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -49,8 +49,8 @@
 				{% assign content_list_size_index_0 = page.content_list.size | minus: 1 %}
 				{% for i in (0..content_list_size_index_0) %}
 				<li>
-					<a class="anchor" id="{{ page.quick_list[i]["anchor"] }}"></a>
-					<p class="content-title">{{ page.quick_list[i]["title"] }}</p>
+					<a class="anchor" id="{{ page.quick_list[i] | downcase | replace: " ", "-" }}"></a>
+					<p class="content-title">{{ page.quick_list[i] }}</p>
 					<p class="content-text">
 						{{ page.content_list[i] }}
 					</p>
