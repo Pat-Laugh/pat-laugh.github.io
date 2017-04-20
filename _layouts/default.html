@@ -42,7 +42,9 @@
 			<div id="quick-list-block">
 				<ul id="quick-list">
 					{% for item in page.quick_list %}
+                    {% if item.size > 0 %}
 					<li><a href="#{{ item | downcase | replace: " ", "-" }}">{{ item }}</a></li>
+                    {% endif %}
 					{% endfor %}
 				</ul>
 			</div>
@@ -52,7 +54,9 @@
 				{% for i in (0..content_list_size_index_0) %}
 				<li>
 					{% if page.has_error == nil %}
+                    {% if page.quick_list[i].size > 0 %}
 					<a class="anchor" id="{{ page.quick_list[i] | downcase | replace: " ", "-" }}"></a>
+                    {% endif %}
 					<p class="content-title">{{ page.quick_list[i] }}</p>
 					{% else %}
 					<p class="content-title error-color">{{ page.quick_list[i] }}</p>
