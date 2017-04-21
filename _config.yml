@@ -1,3 +1,7 @@
-name: Personal website of Patrick Laughrea
+# Site variables
+author: Patrick Laughrea
+
+# Build settings
+markdown: kramdown
 gems:
   - jekyll-redirect-from

@@ -1,11 +1,10 @@
-{% assign author = "Patrick Laughrea" %}
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="{{ author }}">
-	<meta name="description" content="{{ layout.meta_description }} {{ author }}">
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ layout.meta_description }} {{ site.author }}">
 	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 	<script src="/static/js/info-box.js"></script>
 	<title>{{ page.title }}</title>
@@ -13,7 +12,7 @@
 <body>
 	<a class="anchor" id="top"></a>
 	<div id="top-menu">
-		<p id="print-menu">{{ author }} - {{ page.title }}</p>
+		<p id="print-menu">{{ site.author }} - {{ page.title }}</p>
 		<div id="back">
 			<ul id="top-menu-list">
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
@@ -78,7 +77,7 @@
 			<br>
 			{{ layout.last_modif_msg }} {{ page.last_modif }}
 			<br>
-			&copy; 2017 {{ author }}
+			&copy; 2017 {{ site.author }}
 		</footer>
 	</div>
 </body>
