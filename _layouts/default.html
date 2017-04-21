@@ -18,7 +18,7 @@
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
 				{% assign top_menu_size_index_0 = layout.top_menu.size | minus: 1 %}
 				{% for i in (1..top_menu_size_index_0) %}
-				<li><a href="/{{ layout.lang_main }}/{{ layout.top_menu[i] | downcase | replace: " ", "-" }}">{{ layout.top_menu[i] }}</a></li>
+				<li><a href="/{{ layout.lang_main }}/{{ layout.top_menu[i] | slugify }}">{{ layout.top_menu[i] }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
@@ -42,7 +42,7 @@
 				<ul id="quick-list">
 					{% for item in page.quick_list %}
                     {% if item.size > 0 %}
-					<li><a href="#{{ item | downcase | replace: " ", "-" }}">{{ item }}</a></li>
+					<li><a href="#{{ item | slugify }}">{{ item }}</a></li>
                     {% endif %}
 					{% endfor %}
 				</ul>
@@ -54,14 +54,14 @@
 				<li>
 					{% if page.has_error == nil %}
                     {% if page.quick_list[i].size > 0 %}
-					<a class="anchor" id="{{ page.quick_list[i] | downcase | replace: " ", "-" }}"></a>
+					<a class="anchor" id="{{ page.quick_list[i] | slugify }}"></a>
                     {% endif %}
 					<p class="content-title">{{ page.quick_list[i] }}</p>
 					{% else %}
 					<p class="content-title error-color">{{ page.quick_list[i] }}</p>
 					{% endif %}
 					<p class="content-text">
-						{{ page.content_list[i] }}
+						{{ page.content_list[i] | smartify }}
 					</p>
 				</li>
 				{% endfor %}
