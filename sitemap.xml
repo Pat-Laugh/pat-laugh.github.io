@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://pat-laugh.ca/fr/</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/fr/programmation</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/programmation" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/programming" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/fr/musique</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/musique" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/music" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/fr/blog</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/blog" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/blog" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/fr/contact</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/contact" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/contact" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/en/</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/en/programming</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/programmation" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/programming" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/en/music</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/musique" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/music" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/en/blog</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/blog" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/blog" />
+	</url>
+	<url>
+		<loc>https://pat-laugh.ca/en/contact</loc>
+		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/contact" />
+		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/contact" />
+	</url>
+</urlset>
