@@ -32,6 +32,16 @@ a.anchor
 	top: 0px;
 }
 
+.quick-link
+{
+	display: block;
+}
+
+.quick-link:before
+{
+	content: "→ ";
+}
+
 #top-menu
 {
 	width: 100%;
@@ -416,7 +426,7 @@ a.anchor
 		width: 9em;
 	}
 	
-	#quick-list-block /* same width as contentTitle */
+	#quick-list-block /* same width as content-title */
 	{
 		margin-right: 1em;
 		min-width: 9em;
@@ -447,6 +457,11 @@ a.anchor
 		font-family: Arial, Helvetica, sans-serif;
 		letter-spacing: 0.0625em;
 		color: black;
+	}
+	
+	.quick-link
+	{
+		display: none;
 	}
 
 	#quick-list-block
