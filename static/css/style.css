@@ -98,6 +98,8 @@ a.anchor
 	display: block;
 	max-width: 47em;
 	padding: 1em;
+	background-color: white;
+	margin: auto;
 }
 
 #top-button
@@ -113,12 +115,20 @@ a.anchor
 {
 	display: none;
 	position: relative;
+	min-width: 15.5rem;
 	max-width: 15.5rem;
 	margin: auto;
 	border: 1px solid #BBFBBB;
 	margin-bottom: 1em;
 	text-align: center;
 	background-color: #EEFEEE;
+}
+
+.info-box-margin
+{
+	display: none;
+	flex: 1;
+	min-width: 10em;
 }
 
 .info-box > *
@@ -235,14 +245,6 @@ a.anchor
 	}
 }
 
-@media screen and (min-width: 36rem) and (max-width: 37.699rem)
-{
-	.info-box
-	{
-		margin-left: 10em;
-	}
-}
-
 @media screen and (orientation: portrait) and (max-width: 35.999rem) and (min-width: 32rem), (max-width: 31.999rem)
 {
 	#top-menu
@@ -314,7 +316,7 @@ a.anchor
 	}
 }
 
-@media screen and (min-width: 50.625rem)
+@media screen and (min-width: 49.5rem)
 {
 	html, body
 	{
@@ -328,7 +330,6 @@ a.anchor
 		border-left: 0.25rem solid black;
 		background-color: white;
 		min-height: calc(100% - 4.375em);
-		margin: auto;
 	}
 	
 	#content-list
@@ -407,7 +408,7 @@ a.anchor
 	}
 }
 
-@media screen and (max-width: 50.624rem) and (min-width: 36rem)
+@media screen and (max-width: 49.499rem) and (min-width: 36rem)
 {
 	#main
 	{
@@ -440,6 +441,11 @@ a.anchor
 	#quick-list-block
 	{
 		display: none;
+	}
+	
+	.info-box-margin
+	{
+		min-width: 0em;
 	}
 }
 

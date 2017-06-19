@@ -25,10 +25,14 @@
 		</div>
 	</div>
 	<div id="content">
-		{% assign id_language_box = 'language-box' %}
-		<div class="info-box" id="{{ id_language_box }}">
-			<a href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
-			<div class="info-box-close" onclick="closeBox('{{ id_language_box }}')">&times;</div>
+		<div style="display: flex;">
+			{% assign id_language_box = 'language-box' %}
+			<div class="info-box-margin" id="{{ id_language_box }}-m1"></div>
+			<div class="info-box" id="{{ id_language_box }}" style="flex: 4;">
+				<a href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
+				<div class="info-box-close" onclick="closeBox('{{ id_language_box }}')">&times;</div>
+			</div>
+			<div class="info-box-margin" id="{{ id_language_box }}-m2"></div>
 		</div>
 		
 		{% if page.content_list %}

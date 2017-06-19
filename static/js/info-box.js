@@ -21,14 +21,26 @@ function closeBox(boxId)
 		localStorage.setItem(boxId, Date.now());
 }
 
+function setDisplay(id, value)
+{
+	document.getElementById(id).style.display = value;
+}
+
+function setDisplayBox(id, value)
+{
+	setDisplay(id, value);
+	setDisplay(id + "-m1", value);
+	setDisplay(id + "-m2", value);
+}
+
 function showBox(boxId)
 {
-	document.getElementById(boxId).style.display = "block";
+	setDisplayBox(boxId, "block");
 }
 
 function hideBox(boxId)
 {
-	document.getElementById(boxId).style.display = "none";
+	setDisplayBox(boxId, "none");
 }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API
