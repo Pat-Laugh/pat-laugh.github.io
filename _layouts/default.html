@@ -6,7 +6,7 @@
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ layout.meta_description }} {{ site.author }}">
 	<link rel="canonical" href="https://pat-laugh.ca/{{ layout.lang_main }}/{{ page.link }}">
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/scss/style.css">
 	<script src="/static/js/info-box.js"></script>
 	<title>{{ site.author }} &mdash; {{ page.title }}</title>
 </head>
@@ -14,7 +14,7 @@
 	<a class="anchor" id="top"></a>
 	<div id="top-menu">
 		<p id="print-menu">{{ site.author }} &mdash; {{ page.title }}</p>
-		<div id="back">
+		<div id="back-menu">
 			<ul id="top-menu-list">
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
 				{% assign top_menu_size_index_0 = layout.top_menu.size | minus: 1 %}
