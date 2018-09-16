@@ -168,6 +168,29 @@ footer a { color: inherit; }
 	color: $color-content-title;
 }
 
+.blog-list h1 {
+	font-family: $font-stack-list;
+	letter-spacing: $letter-spacing;
+	color: $color-content-title;
+}
+
+.blog-list h6 {
+	font-family: $font-stack-list;
+	letter-spacing: $letter-spacing;
+}
+
+.blog-post {
+	border: 1px solid $color-border-menu;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	background-color: $bg-color-body;
+}
+
+.blog-list h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .content-title a {
 	text-decoration: none;
 	color: inherit;
