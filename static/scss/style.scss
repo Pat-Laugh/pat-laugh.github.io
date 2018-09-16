@@ -168,29 +168,6 @@ footer a { color: inherit; }
 	color: $color-content-title;
 }
 
-.blog-list h1 {
-	font-family: $font-stack-list;
-	letter-spacing: $letter-spacing;
-	color: $color-content-title;
-}
-
-.blog-list h6 {
-	font-family: $font-stack-list;
-	letter-spacing: $letter-spacing;
-}
-
-.blog-post {
-	border: 1px solid $color-border-menu;
-	margin-bottom: 1em;
-	padding: 0.5em;
-	background-color: $bg-color-body;
-}
-
-.blog-list h1 a {
-	text-decoration: none;
-	color: inherit;
-}
-
 .content-title a {
 	text-decoration: none;
 	color: inherit;
@@ -397,3 +374,34 @@ footer a { color: inherit; }
 		column-count: 2;
 	}
 }
+
+.blog-list {
+	list-style-type: none;
+}
+
+.blog-post {
+	border: 1px solid $color-border-menu;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	background-color: $bg-color-body;
+}
+
+.blog-post h1 {
+	font-family: $font-stack-list;
+	letter-spacing: $letter-spacing;
+	color: $color-content-title;
+	font-size: 1.25rem;
+	font-weight: 400;
+}
+
+.blog-post h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.blog-post h6 {
+	font-family: $font-stack-list;
+	letter-spacing: $letter-spacing;
+}
+
+.blog-post p { margin-top: 1em; }
