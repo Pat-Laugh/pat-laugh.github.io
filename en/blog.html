@@ -9,16 +9,18 @@ permalink: /en/blog
 .blog-list {
 	list-style-type: none;
 }
-.blog-list h1 {
+.blog-post h1 {
 	font-size: 1.25rem;
 	font-weight: 400;
 }
+.blog-post p { margin-top: 1em; }
 </style>
 <p>
-	I'm not sure what will be the format of this blog, but for now I will attempt to
-	just make it my philosophical take on some subjects. Eventually, my aim is to
-	make the text more robust by basing ideas on the real world rather than just
-	on a philosophical point of view.
+	I'm not sure what will be the purpose of this blog, but for now I will
+	attempt to just make it a place where I put my philosophical take and my
+	personal thoughts on some subjects. Eventually, my aim is to make the text
+	more robust by basing ideas on the real world rather than just on a
+	philosophical or personal point of view.
 </p>
 <br>
 <p>
@@ -28,10 +30,10 @@ permalink: /en/blog
 <br>
 <ul class="blog-list">
 	{% for post in site.posts %}
-	<li id="{{ post.title | downcase | replace: " ", "-" }}" class="blog-post">
-		<h1><a href="#{{ post.title | downcase | replace: " ", "-" }}">{{ post.title }}</a></h1>
+	<a class="anchor" id="{{ post.title | slugify }}"></a>
+	<li class="blog-post">
+		<h1><a href="#{{ post.title | slugify }}">{{ post.title }}</a></h1>
 		<h6>Last edited on {{ post.last_modif }}</h6>
-		<br>
 		{{ post.content }}
 	</li>
 	{% endfor %}

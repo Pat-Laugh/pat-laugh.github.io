@@ -13,7 +13,7 @@
 <body>
 	<a class="anchor" id="top"></a>
 	<div id="top-menu">
-		<p id="print-menu">{{ site.author }} - {{ page.title }}</p>
+		<div id="print-menu">{{ site.author }} - {{ page.title }}</div>
 		<div id="back-menu">
 			<ul id="top-menu-list">
 				<li><a href="/{{ layout.lang_main }}/">{{ layout.top_menu[0] }}</a></li>
@@ -56,13 +56,13 @@
                     {% if page.quick_list[i].size > 0 %}
 					<a class="anchor" id="{{ page.quick_list[i] | slugify }}"></a>
                     {% endif %}
-					<p class="content-title">{{ page.quick_list[i] }}</p>
+					<div class="content-title">{{ page.quick_list[i] }}</div>
 					{% else %}
-					<p class="content-title error-color">{{ page.quick_list[i] }}</p>
+					<div class="content-title error-color">{{ page.quick_list[i] }}</div>
 					{% endif %}
-					<p class="content-text">
+					<div class="content-text">
 						{{ page.content_list[i] | smartify }}
-					</p>
+					</div>
 				</li>
 				{% endfor %}
 			</ul>
