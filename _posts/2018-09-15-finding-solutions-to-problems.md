@@ -27,7 +27,7 @@ they're useful.
 Easy problems are boring and tough problems shouldn't be easy. They should not
 be tackled with laziness; that is, trying "solutions" with the hope they'll
 work. The effort should be put in and that should be embraced. I don't get much
-satisfaction playing dice and winning; I didn't win, the dice won for you...
+satisfaction playing dice and winning; I didn't win, the dice won for me...
 But some people think differently: They'll take credit when luck did the work
 for them and they'll blame luck when it did not. I prefer, and try, to own my
 own luck and bear responsibility. I would not be able to consciously accept
