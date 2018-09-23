@@ -56,7 +56,13 @@
                     {% if page.quick_list[i].size > 0 %}
 					<a class="anchor" id="{{ page.quick_list[i] | slugify }}"></a>
                     {% endif %}
-					<div class="content-title">{{ page.quick_list[i] }}</div>
+					<div class="content-title">
+						{% if page.put_link and page.put_link[i] %}
+						<a href="{{ page.put_link[i] }}">{{ page.quick_list[i] }}</a>
+						{% else %}
+						{{ page.quick_list[i] }}
+						{% endif %}
+					</div>
 					{% else %}
 					<div class="content-title error-color">{{ page.quick_list[i] }}</div>
 					{% endif %}
