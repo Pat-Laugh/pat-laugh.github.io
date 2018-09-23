@@ -1,6 +1,7 @@
 ---
 title: Finding solutions to problems
 last_modif: 2018-09-17
+tags: [n806]
 ---
 I believe the best way to find a solution to a problem is to understand the
 problem and its environment thoroughly. You then have to find a solution to that
