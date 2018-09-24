@@ -420,6 +420,23 @@ footer a { color: inherit; }
 .blog-list > li > h6 {
 	font-family: $font-stack-list;
 	letter-spacing: $letter-spacing;
+	margin-bottom: 1rem;
 }
 
-.blog-content p { margin-top: 1em; }
+.blog-content p { margin-top: 1rem; }
+.blog-content > p:first-child { margin-top: 0; }
+
+@media print {
+	.blog-list-title {
+		display: none;
+	}
+	
+	.blog-list > li {
+		border-width: 0;
+		page-break-inside:avoid;
+	}
+	
+	.blog-content {
+		columns: 2;
+	}
+}
