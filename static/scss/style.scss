@@ -365,6 +365,7 @@ footer a { color: inherit; }
 	#content-list { max-width: 100%; }
 	.content-text { max-width: 100%; }
 	#top-button { display: none; }
+	.noprint { display: none; }
 }
 
 @media print and (orientation: landscape) {
