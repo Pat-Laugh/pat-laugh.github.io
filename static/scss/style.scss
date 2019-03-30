@@ -441,3 +441,23 @@ footer a { color: inherit; }
 		columns: 2;
 	}
 }
+
+.contact-availability tr td:first-child {
+	display: inline-block;
+	border: solid black 1px;
+	width: 1.15em;
+	margin-right: 0.075em;
+}
+
+.contact-availability .yes {
+	background-color: #71F515;
+}
+.contact-availability .no {
+	background-color: #E12728;
+}
+.contact-availability .maybe {
+	background-color: #FFFFFF;
+}
+.contact-availability .weekend {
+	background-color: #D0D0D0;
+}
