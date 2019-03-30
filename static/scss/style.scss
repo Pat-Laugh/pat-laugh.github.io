@@ -2,9 +2,8 @@
 ---
 /* Copyright 2017-2019 Patrick Laughrea */
 
-* { padding: 0; margin: 0; }
-sup { vertical-align: top; }
-sub { vertical-align: bottom; }
+@import 'init-setup';
+@import 'website-colors';
 
 @mixin disable-selection() {
 	/* http://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting-using-css */
@@ -32,16 +31,8 @@ $wide-screen: 49.5rem;
 $small-screen: 36rem;
 $height-landscape: 32rem;
 $nav-height: 3.375em;
-$letter-spacing: 0.0625em;
-$bg-color-menu: #BBFBBB;
-$bg-color-body: #EEFEEE;
-$bg-color-btn-hover: #CEFECE;
-$color-content-title: #00AA00;
-$color-border-menu: #A0EAA0;
-$font-stack-list: Arial, Helvetica, sans-serif;
 $width-content-title: 9em;
 $margin-content-title: 1em;
-$width-border-content: 0.25rem;
 $width-info-box: 15.5rem;
 
 footer {
