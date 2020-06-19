@@ -1,0 +1,51 @@
+---
+layout: en/default
+title: Recruitment
+link: recruitment
+permalink: /en/recruitment
+redirect_from: /recruitment
+quick_list:
+ -  Purpose
+ -  Credentials
+ -  Communication
+ -  More information
+content_list:
+ - >
+    I'm currently looking for paid work. This section is dedicated to help
+    interested people get additional information related
+    to that, hopefully increasing the efficiency of the recruitment process
+    for all of us.
+ - >
+    For a summary of my credentials, you can check my
+    <a href="https://www.linkedin.com/in/pat-laugh">LinkedIn profile</a>.
+    If I initiated contact, I probably sent you a resume. They both contain
+    about the same relevant information.
+ - >
+    I ask that synchronous/voice communications ("meetings") be planned. To make
+    this simple, I made [this application](link) where you can request a 30-minute meeting
+    at a given time. Select the case for the day and hour, then put your contact
+    information and purpose of the meeting. You can also send me an email with
+    the equivalent information.
+
+    Why do I request this? If you have any question, and they can be answered
+    textually, it's simpler to do that. If not, then it's also simple to agree
+    on a time for a more productive meeting. The information below is also meant
+    to avoid unnecessary meetings.
+ - >
+    Below is a list of various information you might seek to know.
+---
+<ol class="blog-list-title">
+	{% for post in site.posts %}
+	<li><a href="#{{ post.title | slugify }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ol>
+<br>
+<ul class="blog-list">
+	{% for post in site.posts %}
+	<a class="anchor" id="{{ post.title | slugify }}"></a>
+	<li>
+		<h1><a href="#{{ post.title | slugify }}">{{ post.title }}</a></h1>
+		<div class="blog-content">{{ post.content }}</div>
+	</li>
+	{% endfor %}
+</ul>
