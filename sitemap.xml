@@ -12,11 +12,6 @@
 		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/programming" />
 	</url>
 	<url>
-		<loc>https://pat-laugh.ca/fr/blog</loc>
-		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/blog" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/blog" />
-	</url>
-	<url>
 		<loc>https://pat-laugh.ca/fr/contact</loc>
 		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/contact" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/contact" />
@@ -30,11 +25,6 @@
 		<loc>https://pat-laugh.ca/en/programming</loc>
 		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/programmation" />
 		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/programming" />
-	</url>
-	<url>
-		<loc>https://pat-laugh.ca/en/blog</loc>
-		<xhtml:link rel="alternate" hreflang="fr" href="https://pat-laugh.ca/fr/blog" />
-		<xhtml:link rel="alternate" hreflang="en" href="https://pat-laugh.ca/en/blog" />
 	</url>
 	<url>
 		<loc>https://pat-laugh.ca/en/contact</loc>
