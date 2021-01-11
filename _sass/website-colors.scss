@@ -1,9 +1,33 @@
 $letter-spacing: 0.0625em;
+$font-stack-list: Arial, Helvetica, sans-serif;
+$width-border-content: 0.25rem;
+/*
 $bg-color-menu: #BBFBBB;
 $bg-color-body: #EEFEEE;
 $bg-color-body-paler: #F3FEF3;
 $bg-color-btn-hover: #CEFECE;
+$bg-color-title-hover: #AAEAAA;
+$bg-color-info-box-hover: #DEFEDE;
 $color-content-title: #00AA00;
 $color-border-menu: #A0EAA0;
-$font-stack-list: Arial, Helvetica, sans-serif;
-$width-border-content: 0.25rem;
+$color-error: #AA0000;
+*/
+/*
+$bg-color-menu: #DBDBDB;
+$bg-color-body: #F7F7F7;
+$bg-color-body-paler: #F3F3F3;
+$bg-color-btn-hover: #CECECE;
+$color-content-title: #777777;
+$color-border-menu: #A0a0A0;
+*/
+$bg-color-menu: #DBDBDB;
+$bg-color-body: #F6F6F6;
+$bg-color-body-paler: #F8F8F8;
+$bg-color-btn-hover: #e6e6e6;
+$bg-color-title-hover: #cacaca;
+$bg-color-info-box-hover: #eeeeee;
+/* $color-content-title: #888888; */
+$color-content-title: #777777;
+$color-name-title: #555555;
+$color-border-menu: #c5c5c5;
+$color-error: #eeeeee;
