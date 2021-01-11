@@ -34,18 +34,24 @@ content_list:
  - >
     Below is a list of various information you might seek to know.
 ---
+<div id="recruitment-qa">
 <ol class="blog-list-title">
 	{% for post in site.posts %}
+	{% if post.qa %}
 	<li><a href="#{{ post.title | slugify }}">{{ post.title }}</a></li>
+	{% endif %}
 	{% endfor %}
 </ol>
 <br>
 <ul class="blog-list">
 	{% for post in site.posts %}
+	{% if post.qa %}
 	<a class="anchor" id="{{ post.title | slugify }}"></a>
 	<li>
 		<h1><a href="#{{ post.title | slugify }}">{{ post.title }}</a></h1>
 		<div class="blog-content">{{ post.content }}</div>
 	</li>
+	{% endif %}
 	{% endfor %}
 </ul>
+</div>

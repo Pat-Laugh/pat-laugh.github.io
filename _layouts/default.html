@@ -34,7 +34,7 @@
 			</div>
 			<div class="info-box-margin" id="{{ id_language_box }}-m2"></div>
 		</div>
-		
+
 		{% if page.content_list %}
 		<div id="main">
 			{% if page.has_error == nil %}
@@ -73,10 +73,9 @@
 				{% endfor %}
 			</ul>
 		</div>
-		{% else %}
-		{{ content }}
 		{% endif %}
-		
+		{{ content }}
+
 		<div id="top-button"><a href="#top">&uarr;</a></div>
 		<footer>
 			<a id="link-language" href="/{{ layout.lang_other }}/{{ page.link }}">{{ layout.info_box_lang }}</a>
